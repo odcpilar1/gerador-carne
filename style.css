@@ -1,3 +1,209 @@
+/* ===========================
+   GERADOR DE CARNÊS
+   Clínica Odontológica
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F4F7F4;
+    color:#333;
+}
+
+/* CABEÇALHO */
+
+header{
+    background:#2E7D32;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.logo img{
+    width:80px;
+}
+
+.titulo h1{
+    font-size:30px;
+    font-weight:700;
+}
+
+.titulo h2{
+    color:#D4AF37;
+    font-size:18px;
+    font-weight:500;
+}
+
+/* CONTEÚDO */
+
+main{
+    max-width:1300px;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:25px;
+    padding:20px;
+}
+
+/* FORMULÁRIO */
+
+.formulario{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.formulario h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+    margin-top:20px;
+
+    border-left:5px solid #D4AF37;
+
+    padding-left:10px;
+
+}
+
+.campo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:15px;
+
+}
+
+label{
+
+    margin-bottom:5px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+input{
+
+    padding:12px;
+
+    border:1px solid #CCC;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#2E7D32;
+
+}
+
+/* BOTÕES */
+
+.botoes{
+
+    display:grid;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+button{
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#gerar{
+
+    background:#2E7D32;
+
+    color:white;
+
+}
+
+#gerar:hover{
+
+    background:#256728;
+
+}
+
+#imprimir{
+
+    background:#D4AF37;
+
+    color:white;
+
+}
+
+#imprimir:hover{
+
+    background:#b8941e;
+
+}
+
+#pdf{
+
+    background:#1565C0;
+
+    color:white;
+
+}
+
+#limpar{
+
+    background:#777;
+
+    color:white;
+
+}
+
+/* PREVIEW */
+
+.preview{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
@@ -43,6 +249,7 @@
     display:flex;
 
     align-items:center;
+
     gap:10px;
 
     border-bottom:2px solid #D4AF37;
@@ -88,6 +295,7 @@
     padding-top:5px;
 
     font-size:13px;
+
 }
 
 /* IMPRESSÃO */
