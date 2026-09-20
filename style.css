@@ -335,3 +335,31 @@ display:none;
 }
 
 }
+/* Configurações para a impressão */
+@media print {
+  /* Esconde o cabeçalho, logo, menu de navegação e botões */
+  header, 
+  nav, 
+  .logo, 
+  .menu, 
+  button, 
+  .no-print {
+    display: none !important;
+  }
+
+  /* Garante que apenas a área dos carnês fique visível e ocupe a tela inteira */
+  body {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #area-carne, 
+  .secao-carnes { /* Substitua pelo ID ou Classe da sua aba/seção de carnês */
+    display: block !important;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
